@@ -2,7 +2,6 @@ def txt_file_sorter():
     import glob
 
     total_list = []
-    new_list = sorted(total_list, key=len)
     for file_text in glob.glob("*.txt"):
         if file_text != 'new_file.txt':
             def file_worker(file_name: str, mode: str = 'r'):
